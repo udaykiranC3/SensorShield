@@ -1,0 +1,19 @@
+{
+  "name": "smartpredict-backend",
+  "version": "1.0.0",
+  "description": "SmartPredict AI backend: REST API + Arduino serial bridge",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "sim": "node server.js --sim",
+    "sim-extra": "node server.js --sim-extra",
+    "bridge": "node bridge.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.0",
+    "serialport": "^12.0.0"
+  }
+}
