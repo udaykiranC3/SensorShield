@@ -90,5 +90,8 @@ app.post('/api/predict', async (req, res) => {
     setInterval(() => SIM.forEach(id => save(sample(id, Date.now()))), 5000);
     console.log('Sample readings ON for', SIM.join(', '));
   }
+  app.get("/api/health", (req, res) => {
+  res.json({ ok: true, message: "Backend is running" });
+});
   app.listen(5000, () => console.log('API running on http://localhost:5000'));
 })();
